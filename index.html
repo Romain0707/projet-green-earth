@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="header container">
-            <div class="header-head">
+        <div class="container">
+            <div class="flex-between flex-align-center">
                 <div class="logo">
                     <img src="assets/img/logo-green-earth.png" alt="Logo de Green Earth">
                 </div>
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <nav>
-                <ul>
+                <ul class="flex-start gap-2rem">
                     <li><a href="">Accueil</a></li>
                     <li><a href="">A propos</a></li>
                     <li><a href="">Articles</a></li>
@@ -30,7 +30,7 @@
     <main>
         <section id="green-description">
             <div class="container">
-                <div class="green-container">
+                <div class="flex-center gap-1rem">
                     <div class="green-description__text">
                         <h1>Green Hearth</h1>
                         <h2>Agissons pour un avenir durable</h2>
@@ -46,7 +46,7 @@
         <section id="projets">
             <div class="container">
                 <h3>Nos Projets</h3>
-                <div class="card-container">
+                <div class="grid-3-columns gap-1rem">
                     <div class="card">
                         <h4>Reforestation</h4>
                         <p>Planter des arbres pour restaurer les écostystèmes et lutter contre le réchauffement climatique.</p>
@@ -80,16 +80,16 @@
                     <div class="banner-description">
                         <h3>Notre mission</h3>
                         <p>Nous oeuvrons pour protéger notre planète en menant des actions concrètes pour la reforestation, la préservation des océans et la lutte contre le changement climatique.</p>
-                        <ul>
+                        <ul class="grid-2-columns gap-1rem">
                             <li>Reforestation des zones dégradées</li>
-                            <li> Promotion des énergies renouvelables</li>
+                            <li>Promotion des énergies renouvelables</li>
                             <li>Réduction des déchets plastiques</li>
                             <li>Protection des écosystèmes marins</li>
                             <li>Sensibilisation des communautés</li>
                         </ul>
                         <a href="" class="btn btn-green">En savoir +</a>
                     </div>
-                    <div class="banner-img">
+                    <div class="container-img">
                         <img src="assets/img/img1.jpg" alt="Image de l'intérieur d'une serre">
                     </div>
                 </div>
@@ -98,8 +98,10 @@
         <section id="actualite">
             <div class="container">
                 <h3>Nos dernières actualités</h3>
-                <div class="news-grid-top">
-                    <div class="news-img"></div>
+                <div class="grid-2-columns gap-1rem">
+                    <div class="news-card max-height-200px">
+                        <img src="assets/img/global-warming.jpg" alt="">
+                    </div>
                     <div class="news-card">
                         <div class="news-card-description">
                             <a href="" class="btn-news">PODCAST</a>

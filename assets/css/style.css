@@ -30,12 +30,12 @@
 * {
     box-sizing: border-box;
     font-family: var(--ff-DMSans);
-    margin: 0;
-    padding: 0;
 }
 
 body {
     background-color: var(--clr--cream);
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -54,16 +54,14 @@ a {
 footer {
     background-color: var(--clr--green-900);
     color: var(--clr--white);
+    margin: 0;
+    padding: 0;
 }
 
 header {
     margin: 0;
+    padding: 0;
     background-color: var(--clr--white);
-}
-
-header ul {
-    display: flex;
-    gap: 2rem;
 }
 
 h1 {
@@ -74,6 +72,10 @@ h1 {
 h2 {
     font-size: var(--fs-600);
     font-weight: var(--fw-bold);
+}
+
+h3 {
+    font-size: var(--fs-300);
 }
 
 /* UTILITAIRES */
@@ -94,8 +96,8 @@ h2 {
 
 .btn {
     display: inline-block;
-    padding: 0.65rem 1.2rem;
     border-radius: 12px;
+    padding: 0.7rem 1.1rem;
 }
 
 .btn.btn-header {
@@ -121,7 +123,6 @@ h2 {
 .btn-news {
     border: 1px solid var(--clr--lightgray);
     border-radius: 20px;
-    padding: 0.5rem;
     font-weight: 600;
 }
 
@@ -135,13 +136,38 @@ h2 {
     justify-content: space-between;
 }
 
-/* HEADER */
-
-.header-head{
+.flex-start {
     display: flex;
-    justify-content: space-between;
+}
+
+.gap-1rem {
+    gap: 1rem;
+}
+
+.gap-2rem {
+    gap: 2rem;
+}
+
+.flex-align-center {
     align-items: center;
 }
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+}
+
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.max-height-200px {
+    max-height: 200px;
+}
+
+/* HEADER */
 
 .logo {
     width: 5rem;
@@ -150,7 +176,6 @@ h2 {
 nav {
     border-bottom: 1px solid var(--clr--lightgray);
     border-top: 1px solid var(--clr--lightgray);
-    padding: 1rem;
 }
 
 nav a {
@@ -161,19 +186,13 @@ nav a {
 
 /* green description */
 
-.green-container {
-    display: flex;
-    gap: 1rem;
-    margin-block: 5rem;
+#green-description {
+    margin-block: 3rem;
 }
 
 .green-description__text h2 {
-    margin-block: 1rem;
     line-height: 2.5rem;
-}
-
-.green-description__text p {
-    margin-bottom: 1rem;
+    margin-block: 1rem;
 }
 
 .green-description__img img {
@@ -183,18 +202,14 @@ nav a {
 
 /* PROJET */
 
-.card-container {
-    margin-block: 1rem;
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    gap: 1rem;
-    
+#projets {
+    margin-block: 5rem;
 }
 
 .card {
     background-color: var(--clr--white);
     border-radius: 4px;
-    padding: 1.5rem;
+    padding-inline: 1rem;
 }
 
 .card h4 {
@@ -202,38 +217,28 @@ nav a {
     padding-bottom: 1rem;
 }
 
-.card p {
-    padding-top: 1rem;
-}
 
 /* SECTION BANNER MISSION */
 
 #banner-mission {
     background:  center/cover no-repeat url(../img/farmer-bg.jpg);
     padding-block: 3rem;
-    margin-block: 4rem;
-}
-
-.banner-container {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: var(--clr--white);
-    border-radius: 12px;
 }
 
 #banner-mission img {
     border-radius: 8px;
 }
 
-.banner-description h3, .banner-description p , .banner-description li{
-    margin-bottom: 1rem;
+.banner-container {
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--clr--white);
+    border-radius: 12px;
 }
 
 .banner-description ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-inline: 1rem;
+    padding-left: 15px;
 }
 
 .banner-description li {
@@ -245,7 +250,7 @@ nav a {
     position: absolute;
     height: 10px;
     width: 10px;
-    top: 8px;
+    top: 6px;
     left: -15px;
     border-radius: 50%;
     background: radial-gradient(transparent 30%,var(--clr--green-900) 20%);
@@ -257,40 +262,22 @@ nav a {
     display: grid;
     grid-template: 300px /50% 50%;
     gap: 1rem;
-    margin-block: 1rem;
 }
 
-.news-img {
-    background: center/cover no-repeat url(../img/global-warming.jpg);
-    border-radius: 12px;
+img {
+    object-fit: contain;
+    object-position: center;
 }
 
 .news-card {
     border-radius: 12px;
     background-color: var(--clr--white);
     overflow: hidden;
-    padding: 0.2rem;
 }
 
 .read-more {
     text-decoration: underline;
     color: var(--btn-clr--orange);
-}
-
-.news-card-img{
-    padding: 0.5rem;
-}
-
-.news-card-description {
-    padding: 1.5rem;
-}
-
-.news-card-description h4 {
-    margin: 2rem 0 1rem 0;
-}
-
-.news-card-description p {
-    margin-bottom: 1rem;
 }
 
 .news-grid-bottom {
@@ -314,17 +301,7 @@ nav a {
     background: center/cover no-repeat url(../img/energy.jpg);
 }
 
-.btn_news {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0 8rem 0;
-}
-
 /* GALERIE */
-
-#galerie h3 {
-    margin-bottom: 1rem;
-}
 
 .gallery-grid {
     display: grid;
@@ -380,23 +357,11 @@ nav a {
     margin-bottom: 1rem;
 }
 
-#video h3 {
-    margin-top: 4rem;
-    text-align: right;
-    margin-bottom: 1rem;
-}
-
 /* DONS */
 
 #don {
     background-color: var(--clr--green-400);
     color: var(--clr--white);
-    margin-block: 3rem;
-    padding-block: 2rem;
-}
-
-.don--text h3 {
-    margin-bottom: 1rem;
 }
 
 /* SUPPORT */
@@ -405,8 +370,6 @@ nav a {
     display: grid;
     grid-template: 100px / repeat(4,1fr);
     gap: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
 }
 
 .support-img:nth-child(1) {
@@ -424,14 +387,6 @@ nav a {
 
 /* FOOTER */
 
-footer .container {
-    padding-block: 1rem;
-}
-
-.a-propos, .liens-utiles, .mentions-legales {
-    padding-top: 1rem;
-}
-
 .footer-liens {
     display: flex;
     justify-content: space-between;
@@ -444,11 +399,6 @@ footer .container {
 
 .footer-liens h3 {
     text-decoration: underline;
-    margin-bottom: 1rem;
-}
-
-.footer-liens li {
-    margin-bottom: 1rem;
 }
 
 .footer-liens a {
@@ -464,4 +414,20 @@ footer .container {
 .minimap {
     max-height: 200px;
     max-width: 30%;
+}
+
+/* PAGE A PROPOS */
+
+#more-on-us {
+    background: linear-gradient( to left, var(--clr--green-900), var(--clr--green-400));
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#more-on-us p {
+    font-size: var(--fs-600);
+    color: var(--clr--white);
+    font-weight: var(--fw-bold);
+    text-align: center;
 }
