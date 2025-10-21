@@ -40,10 +40,13 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 a {
@@ -55,7 +58,7 @@ footer {
     background-color: var(--clr--green-900);
     color: var(--clr--white);
     margin: 0;
-    padding: 0;
+    padding: 2rem 0;
 }
 
 header {
@@ -123,6 +126,7 @@ h3 {
 .btn-news {
     border: 1px solid var(--clr--lightgray);
     border-radius: 20px;
+    padding: 0.3rem 0.5rem;
     font-weight: 600;
 }
 
@@ -161,6 +165,13 @@ h3 {
 .grid-2-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.grid-4-columns {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 1fr;
 }
 
 .max-height-200px {
@@ -258,21 +269,26 @@ nav a {
 
 /* Section NEWS */
 
-.news-grid-top {
-    display: grid;
-    grid-template: 300px /50% 50%;
-    gap: 1rem;
-}
-
-img {
-    object-fit: contain;
-    object-position: center;
-}
-
 .news-card {
     border-radius: 12px;
     background-color: var(--clr--white);
     overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.news-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-card-img {
+    overflow: hidden;
+    margin: 0.3rem;
+    border-radius: 12px;
+}
+
+.news-card-description {
+    padding: 1rem;
 }
 
 .read-more {
@@ -280,78 +296,48 @@ img {
     color: var(--btn-clr--orange);
 }
 
-.news-grid-bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem
-}
-.news-card-img {
-    width: 100%;
-    height: 150px;
-    border-radius: 12px;
-}
-
-.news-card-img.news-card-forest {
-    background: center/cover no-repeat url(../img/forest.jpg);
-}
-.news-card-img.news-card-garbage {
-    background: center/cover no-repeat url(../img/garbage.jpg);
-}
-.news-card-img.news-card-energy {
-    background: center/cover no-repeat url(../img/energy.jpg);
-}
-
 /* GALERIE */
+
+#galerie {
+    margin-block: 5rem;
+}
 
 .gallery-grid {
     display: grid;
     grid-template: 150px 150px 150px / 1fr 1fr 1fr;
-    gap: 0.7rem;
+    gap: 1rem;
 }
 
-.gallery-img {
+.gallery-img img {
+    height: 100%;
+    width: 100%;
     border-radius: 8px;
 }
 
 .gallery-img:nth-child(1) {
-    background: center/cover no-repeat url(../img/gallery-1.jpg);
-    grid-row: 1 / 3;
-}
-
-.gallery-img:nth-child(2) {
-    background: center/cover no-repeat url(../img/gallery-2.jpg);
+    grid-row: 1/3;
 }
 
 .gallery-img:nth-child(3) {
-    
-    background: center/cover no-repeat url(../img/gallery-3.jpg);
-    grid-row: 1 / 3;
+    grid-row: 1/3;
 }
 
 .gallery-img:nth-child(4) {
-    background: center/cover no-repeat url(../img/gallery-4.jpg);
-    grid-column: 2 / 3;
+    grid-column: 2/3;
     grid-row: 2/3;
 }
 
 .gallery-img:nth-child(5) {
-    background: center/cover no-repeat url(../img/gallery-5.jpg);
     grid-column: 1/3;
-}
-
-.gallery-img:nth-child(6) {
-    background: center/cover no-repeat url(../img/gallery-6.jpg);
 }
 
 /* VIDEO */
 
-.video-grid {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+#video {
+    margin-block: 4rem;
 }
 
-.video-grid iframe {
+#video iframe {
     border-radius: 8px;
     max-height: 200px;
     margin-bottom: 1rem;
@@ -362,47 +348,42 @@ img {
 #don {
     background-color: var(--clr--green-400);
     color: var(--clr--white);
+    padding-block: 2rem;
+}
+
+#don h3 {
+    margin-bottom: 0;
 }
 
 /* SUPPORT */
 
-.support-img-container {
-    display: grid;
-    grid-template: 100px / repeat(4,1fr);
-    gap: 1rem;
+#support {
+    margin-block: 5rem;
 }
 
-.support-img:nth-child(1) {
-    background: center/contain no-repeat url(../img/ue.svg); 
-}
-.support-img:nth-child(2) {
-    background: center/contain no-repeat url(../img/ministere-transition-eco.png);
-}
-.support-img:nth-child(3) {
-    background: center/contain no-repeat url(../img/swift-logo-color.svg);
-}
-.support-img:nth-child(4) {
-    background: center/contain no-repeat url(../img/confederation-suisse.svg);
+#support img {
+    object-fit: fill;
+    height: 100px;
 }
 
 /* FOOTER */
 
-.footer-liens {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+.footer-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 30%;
+    grid-auto-rows: 1fr;
 }
 
-.a-propos {
-    max-width: 30%;
-}
-
-.footer-liens h3 {
+.footer-link h3 {
     text-decoration: underline;
 }
 
-.footer-liens a {
+footer a {
     color: var(--clr--white);
+}
+
+footer li {
+    margin-bottom: 0.5rem;
 }
 
 .minimap iframe {
@@ -413,7 +394,6 @@ img {
 
 .minimap {
     max-height: 200px;
-    max-width: 30%;
 }
 
 /* PAGE A PROPOS */
