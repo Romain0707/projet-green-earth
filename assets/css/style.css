@@ -153,6 +153,11 @@ h3 {
     flex-direction: row-reverse;
 }
 
+.flex-dir-column {
+    display: flex;
+    flex-direction: column;
+}
+
 .gap-1rem {
     gap: 1rem;
 }
@@ -623,4 +628,141 @@ footer li {
     border-radius: 8px;
     text-align: start;
     height: 2.5rem;
+}
+
+/* PAGE DONS */
+
+#faire-un-don {
+    margin-block: 4rem;
+}
+
+#faire-un-don .container {
+    max-width: 1080px;
+}
+
+.faire-un-don-sub-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 2rem;
+    background-color: var(--clr--white);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.faire-un-don__img {
+    height: 350px;
+}
+
+.faire-un-don__img img {
+    width: 100%;
+    height: 100%;
+    object-position: bottom;
+    border-radius: 8px;
+    box-shadow: -8px 8px 0 0 var(--clr--green-900);
+}
+
+.faire-un-don__text {
+    padding-right: 2rem;
+}
+
+.faire-un-don__text a, .faire-un-don__text .paiement{
+    text-align: center;
+}
+
+.contribute {
+    font-size: var(--fs-500);
+    font-weight: 900;
+    margin: 0;
+}
+
+.don-total {
+    font-size: var(--fs-600);
+    font-weight: 900;
+    margin: 0;
+    line-height: 2.5rem;
+
+}
+
+.objectif-don {
+    font-size: small;
+    margin-top: 0;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+}
+
+.paiement {
+    margin-top: 0;
+    text-decoration: underline;
+    opacity: 70%;
+}
+
+/*  section SOUTENEZ */
+
+#soutenez {
+    margin-block: 4rem;
+}
+
+#soutenez .container {
+    max-width: 700px;
+}
+
+.soutenez__title {
+    text-align: center;
+}
+
+.soutenez__title h2 {
+    font-size: var(--fs-500);
+    margin-bottom: 0;
+}
+
+.soutenez__title p {
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+#soutenez form {
+    background-color: var(--clr--white);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#soutenez input:not([type="submit"]) {
+    appearance: none;
+    border: none;
+    background-color: #F9F9F9;
+    height: 3rem;
+    padding-left: 1rem;
+    border-radius: 8px;
+}
+
+#soutenez input[type="submit"] {
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.top-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bottom-form {
+    display: grid;
+    grid-template-columns: 60% 16% 16%;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.grid-montant {
+    grid-column: 1/3;
+}
+
+.form-btn {
+    width: 70%;
+    margin: auto;
 }
