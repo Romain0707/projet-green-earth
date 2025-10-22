@@ -275,6 +275,10 @@ nav a {
 
 /* Section NEWS */
 
+#actualite .news-card {
+    margin-bottom: 1rem;
+}
+
 .news-card {
     border-radius: 12px;
     background-color: var(--clr--white);
