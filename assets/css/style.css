@@ -404,14 +404,14 @@ footer li {
 
 /* HEADER DE CHAQUE PAGE */
 
-#more-on-us, #articles, #contact {
+.heading {
     background: linear-gradient( to left, var(--clr--green-900), var(--clr--green-400));
     height: 100px;
     display: flex;
     align-items: center;
 }
 
-#more-on-us p, #articles p, #contact p {
+.heading p {
     font-size: var(--fs-600);
     color: var(--clr--white);
     font-weight: var(--fw-bold);
