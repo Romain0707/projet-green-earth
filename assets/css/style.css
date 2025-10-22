@@ -111,16 +111,36 @@ h3 {
 .btn.btn-green {
     background-color: var(--clr--green-900);
     color: var(--clr--white);
+    border: 1px solid var(--clr--green-900);
+    transition: all 0.3s ease;
+}
+
+.btn.btn-green:hover {
+    background-color: var(--clr--white);
+    color: var(--clr--green-900);
 }
 
 .btn.btn-orange {
     background-color: var(--btn-clr--orange);
     color: var(--clr--white);
+    border: 1px solid var(--btn-clr--orange);
+    transition: all 0.3s ease;
+}
+
+.btn.btn-orange:hover {
+    background-color: var(--clr--white);
+    color: var(--btn-clr--orange);
 }
 
 .btn.btn-white {
     background-color: var(--clr--white);
     color: var(--clr--black);
+    transition: all 0.3s ease;
+}
+
+.btn.btn-white:hover {
+    background-color: var(--clr--green-900);
+    color: var(--clr--white);
 }
 
 .btn-news {
@@ -128,6 +148,11 @@ h3 {
     border-radius: 20px;
     padding: 0.3rem 0.5rem;
     font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.btn-news:hover {
+    background-color: var(--clr--lightgray);
 }
 
 .flex-center {
@@ -190,6 +215,12 @@ h3 {
 
 .event-meta-green {
     color: var(--clr--green-900)!important;
+    border: 1px solid var(--clr--green-900);
+}
+
+.event-meta-green:hover {
+    color: var(--clr--white)!important;
+    border: 1px solid var(--clr--white);
 }
 
 /* HEADER */
@@ -206,6 +237,11 @@ nav {
 nav a {
     font-weight: var(--fw-bold);
     color: var(--clr--blueish);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 1px solid var(--clr--black);
 }
 
 
@@ -330,6 +366,13 @@ nav a {
 .gallery-img img {
     height: 100%;
     width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.gallery-img:hover {
+    filter: brightness(1.2);
+    border: 1px solid var(--clr--white);
     border-radius: 8px;
 }
 
@@ -942,7 +985,7 @@ footer li {
     .bottom-form .flex-dir-column:nth-child(1) {
         grid-column: 1/3;
     }
-    
+
     .container-article {
         grid-template-columns: 1fr;
     }
@@ -999,5 +1042,4 @@ footer li {
         height: 3rem;
         width: 70%;
     }
-
 }
