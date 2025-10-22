@@ -189,7 +189,7 @@ h3 {
 }
 
 .event-meta-green {
-    color: var(--clr--green-400)!important;
+    color: var(--clr--green-900)!important;
 }
 
 /* HEADER */
@@ -300,6 +300,10 @@ nav a {
     margin: 0.3rem;
     border-radius: 12px;
     height: 150px;
+}
+
+.news-card-img img:hover {
+    cursor: pointer;
 }
 
 .news-card-description {
@@ -845,3 +849,4 @@ footer li {
     border-radius: 4px;
     padding: 0.5rem 1rem;
 }
+
