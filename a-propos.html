@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>A propos</title>
+    <title>Green Earth - A propos</title>
 </head>
 <body>
     <header>
-        <div class="header container">
-            <div class="header-head">
+        <div class="container">
+            <div class="flex-between flex-align-center">
                 <div class="logo">
                     <img src="assets/img/logo-green-earth.png" alt="Logo de Green Earth">
                 </div>
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <nav>
-                <ul>
+                <ul class="flex-start gap-2rem">
                     <li><a href="">Accueil</a></li>
                     <li><a href="">A propos</a></li>
                     <li><a href="">Articles</a></li>
@@ -34,16 +34,14 @@
                 <p>En savoir plus sur nous</p>
             </div>
         </section>
-        
 
-
-        <section id="green-description">
-            <div class="container flex-center">
-                <div class="green-container">
-                    <div class="green-description__img">
+        <section id="avenir">
+            <div class="container">
+                <div class="grid-2-columns gap-2rem">
+                    <div class="avenir__img">
                         <img src="assets/img/about-hero.jpg" alt="Image de bac de plante">
                     </div>
-                    <div class="green-description__text">
+                    <div class="avenir__text">
                         <h1>Notre engagement</h1>
                         <h3>Un avenir durable commence aujourd'hui</h3>
                         <p>Chez Green Earth, nous croyons que chaque action compte. Depuis notre création, nous avons mobilisé des milliers de personnes pour protéger les écosystèmes, réduire les émissions de carbone et promouvoir des pratiques durables. Ensemble, nous pouvons faire la différence.</p>
@@ -57,42 +55,160 @@
                 </div>
             </div>
         </section>
+
+        <section id="green-earth-human">
+            <div class="container">
+                <div class="green-earth-human__text">
+                    <h3>Les humains derrière Green Earth</h3>
+                    <p>Découvrez les visages et les histoires des personnes passionnées qui ont deonné vie à Green Earth. Leur engagement et leur expertise sont au coeur de notre mission.</p>
+                </div>
+                <div class="grid-3-columns gap-2rem">
+                    <div class="card-human">
+                        <div class="card-human__img">
+                            <img src="assets/img/sarah.jpg" alt="Image de Sarah Dupont">
+                        </div>
+                        <p class="human__name">Sarah Dupont</p>
+                        <p class="human__fonc">Fondatrice & Directrice</p>
+                    </div>
+                    <div class="card-human">
+                        <div class="card-human__img">
+                            <img src="assets/img/julien.jpg" alt="Image de Julien Martin">
+                        </div>
+                        <p class="human__name">Julien Martin</p>
+                        <p class="human__fonc">Co-fondateur & Responsable des projets</p>
+                    </div>
+                    <div class="card-human">
+                        <div class="card-human__img">
+                            <img src="assets/img/amina.jpg" alt="Image de Amina Ben Ali">
+                        </div>
+                        <p class="human__name">Amina Ben Ali</p>
+                        <p class="human__fonc">Responsable de la sensibilisation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="impact">
+            <div class="container">
+                <div class="notre-impact">
+                    <h3>Notre impact</h3>
+                    <p>Depuis notre création, Green Earth a initié des projets ambitieux pour restaurer les écosystèmes, protéger la biodiversité et sensibiliser les communautées à travers le monde. Ensemble, nous construisons un avenir durable.</p>
+                </div>
+                <div class="grid-2-columns gap-1rem">
+                    <div class="img-don">
+                        <img src="assets/img/don-1.jpg" alt="Image d'une personne cueillant une fève de cacao">
+                    </div>
+                    <div class="img-don">
+                        <img src="assets/img/don-2.jpg" alt="Image de différents légumes dans des cagettes en bois">
+                    </div>
+                </div>
+                <div class="grid-3-columns gap-1rem">
+                    <div class="card-impact">
+                        <p class="impact-chiffre">+500 000</p>
+                        <p>arbres plantés pour restaurer les forêts et capturer le carbone.</p>
+                    </div>
+                    <div class="card-impact">
+                        <p class="impact-chiffre">+200</p>
+                        <p>projets de conservation soutenus à travers le monde.</p>
+                    </div>
+                    <div class="card-impact">
+                        <p class="impact-chiffre">+50 000</p>
+                        <p>bénévoles engagés pour protéger notre planète.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="don-a-propos">
+            <div class="container">
+                <div class="flex-between flex-align-center">
+                    <div class="don--text">
+                        <h3>Faire un Don</h3>
+                        <p>Votre soutien est essentiel pour mener à bien nos actions. Chaque don compte.</p>
+                    </div>
+                    <div class="don--link">
+                        <a href="" class="btn btn-white event-meta-green"> Faire un don maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="actualite" class="news">
+            <div class="container">
+                <h3>Nos dernières actualités</h3>
+                <div class="grid-3-columns gap-1rem">
+                    <div class="news-card">
+                        <div class="news-card-img">
+                            <img src="assets/img/forest.jpg" alt="Image d'une fôret">
+                        </div>
+                        <div class="news-card-description">
+                            <a href="" class="btn-news">ARTICLE</a>
+                            <h4>La conservation des forêts : un enjeu crucial</h4>
+                            <p>Découvrez comment la préservation des forêts contribue à la lutte contre le changement climatique.</p>
+                            <a href="" class="read-more">Lire l'article</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card-img">
+                            <img src="assets/img/garbage.jpg" alt="Image d'une décheterie">
+                        </div>
+                        <div class="news-card-description">
+                            <a href="" class="btn-news">VIDEO</a>
+                            <h4>Comment réduire vos déchets</h4>
+                            <p>Adoptez des gestes simples pour réduire vos déchets au quotidien.</p>
+                            <a href="" class="read-more">Lire l'article</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-card-img">
+                            <img src="assets/img/global-warming.jpg" alt="Image de panneau solaire et d'une éolienne">
+                        </div>
+                        <div class="news-card-description">
+                            <a href="" class="btn-news">DOCUMENT</a>
+                            <h4>Les effets du changement climatique</h4>
+                            <p>Comprendre les impacts du rechauffement climatique sur notre planète.</p>
+                            <a href="" class="read-more">Lire l'article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-    <div class="container">
-        <div class="footer-liens">
-            <div class="a-propos">
-                <h3>A propos</h3>  
-                <p>Green Earth est une ONG dédiée à la protection de l'environnement et à la sensibilisation du public.</p>
+        <div class="container">
+            <div class="gap-1rem footer-link">
+                <div class="a-propos">
+                    <h3>A propos</h3>  
+                    <p>Green Earth est une ONG dédiée à la protection de l'environnement et à la sensibilisation du public.</p>
+                </div>
+                <div class="liens-utiles">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Projets</a></li>
+                        <li><a href="">Campagnes</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Faire un don</a></li>
+                    </ul> 
+                </div>
+                <div class="mentions-legales">
+                    <h3>Mentions Légales</h3>
+                    <ul>
+                        <li><a href="">Conditions Générales d'utilisation</a></li>
+                        <li><a href="">Mentions Légales</a></li>
+                        <li><a href="">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="minimap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11250.107701966655!2d0.7274496!3d45.176428800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1761047317556!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div class="liens-utiles">
-                <h3>Liens Utiles</h3>
-                <ul>
-                    <li><a href="">A propos</a></li>
-                    <li><a href="">Projets</a></li>
-                    <li><a href="">Campagnes</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Faire un don</a></li>
-                </ul> 
-            </div>
-            <div class="mentions-legales">
-                <h3>Mentions Légales</h3>
-                <ul>
-                    <li><a href="">Conditions Générales d'utilisation</a></li>
-                    <li><a href="">Mentions Légales</a></li>
-                    <li><a href="">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-            <div class="minimap">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11250.107701966655!2d0.7274496!3d45.176428800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1761047317556!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="copyright">
+                <p>© 2025 Green Earth. Tous droits réservés.</p>
             </div>
         </div>
-        <div class="copyright">
-            <p>2025 Green Earth. Tous droits réservés.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
     
 </body>
 </html>

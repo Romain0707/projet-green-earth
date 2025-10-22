@@ -144,16 +144,21 @@ h3 {
     display: flex;
 }
 
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .gap-1rem {
     gap: 1rem;
 }
 
 .gap-2rem {
     gap: 2rem;
-}
-
-.flex-align-center {
-    align-items: center;
 }
 
 .grid-3-columns {
@@ -176,6 +181,10 @@ h3 {
 
 .max-height-200px {
     max-height: 200px;
+}
+
+.event-meta-green {
+    color: var(--clr--green-400)!important;
 }
 
 /* HEADER */
@@ -248,12 +257,9 @@ nav a {
     border-radius: 12px;
 }
 
-.banner-description ul {
-    padding-left: 15px;
-}
-
 .banner-description li {
-    position: relative;
+    position: relative; 
+    padding-left: 15px;
 }
 
 .banner-description li::before {
@@ -262,7 +268,7 @@ nav a {
     height: 10px;
     width: 10px;
     top: 6px;
-    left: -15px;
+    left: 0px;
     border-radius: 50%;
     background: radial-gradient(transparent 30%,var(--clr--green-900) 20%);
 }
@@ -273,7 +279,6 @@ nav a {
     border-radius: 12px;
     background-color: var(--clr--white);
     overflow: hidden;
-    margin-bottom: 1rem;
 }
 
 .news-card img {
@@ -285,6 +290,7 @@ nav a {
     overflow: hidden;
     margin: 0.3rem;
     border-radius: 12px;
+    height: 150px;
 }
 
 .news-card-description {
@@ -396,18 +402,162 @@ footer li {
     max-height: 200px;
 }
 
-/* PAGE A PROPOS */
+/* HEADER DE CHAQUE PAGE */
 
-#more-on-us {
+#more-on-us, #articles {
     background: linear-gradient( to left, var(--clr--green-900), var(--clr--green-400));
     height: 100px;
     display: flex;
     align-items: center;
 }
 
-#more-on-us p {
+#more-on-us p, #articles p {
     font-size: var(--fs-600);
     color: var(--clr--white);
     font-weight: var(--fw-bold);
     text-align: center;
+}
+
+/* Section avenir */
+
+.avenir__text h3 {
+    margin-block: 0.5rem;
+}
+
+#avenir {
+    margin-block: 3rem;
+}
+
+#avenir img {
+    border-radius: 12px 0 0 0;
+    box-shadow: -8px -8px 0 0 var(--clr--green-900);
+}
+
+#avenir ul {
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+/* section les humain derrières green earth */
+
+#green-earth-human {
+    margin-block: 7rem;
+}
+
+.green-earth-human__text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-human {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem;
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--clr--white);
+    box-shadow: 0px 0px 10px -4px #98A57A;
+}
+
+.card-human__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card-human__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.human__name {
+    color: var(--clr--green-900);
+    font-weight: var(--fw-bold);
+    margin: 2rem 1rem 0.5rem;
+}
+
+.human__fonc {
+    color: var(--btn-clr--orange);
+    margin-top: 0.5rem;
+}
+
+/* SECTION IMPACT */
+
+#impact {
+    margin-bottom: 5rem;
+}
+
+.notre-impact {
+    text-align: center;
+}
+
+.img-don {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 0px 10px -4px #98A57A;
+}
+
+.img-don img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-impact {
+    background-color: var(--clr--white); 
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px -4px #98A57A;
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+.impact-chiffre {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/* section don */
+
+#don-a-propos {
+    background-color: var(--clr--green-900);
+    color: var(--clr--white);
+    padding: 1rem 0rem;
+}
+
+/* section NEWS */
+
+.news {
+    margin-block: 4rem;
+}
+
+
+/* PAGE ARTICLES */
+
+#last-news {
+    margin-block: 3rem;
+}
+
+#recieve-news {
+    margin-block: 3rem;
+}
+
+.sub-container {
+    background-color: var(--clr--white);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#recieve-news input[type="email"] {
+    appearance: none;
+    border: 1px solid var(--clr--lightgray);
+    width: 30%;
+    border-radius: 12px;
+    padding-left: 1rem;
+    background-color: #F9F9F9;
 }
